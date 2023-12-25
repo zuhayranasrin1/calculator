@@ -138,6 +138,8 @@ const Calculator: React.FC = () => {
               type="button"
               value="="
               //1   onClick={(e) => setValue(eval(value))}
+
+              //2
               onClick={(e) =>
                 setValue((value) => new Function(`return ${value}`)())
               }
